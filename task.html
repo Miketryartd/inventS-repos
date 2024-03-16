@@ -22,7 +22,7 @@
         
     </ul>
  </div>
-     <button id="hoverBar" onclick="hoverBar()"><i class='bx bx-arrow-back' ></i></button>
+    
  <div class="sidebar" id="sidebar">
 
     <ul>
@@ -35,9 +35,13 @@
  <!--AddTaskMenu-->
  <div class="invisibleContainer">
 <div class="taskMenu" id="taskMenu">
-    <input type="text" placeholder="Category...">
-    <div class="taskGroup">
-        <ul id="taskGroupList"></ul>
+    <ul>
+        <li> <input type="text" placeholder="What have you planned today?" id="noteInput"><button id="addTaskBtn" onclick="addTask()"><i class='bx bx-plus'></i></button></li>
+    
+    </ul>
+   
+    
+        <ul id="taskList"></ul>
     </div>
 </div>
 </div>
@@ -47,11 +51,7 @@
  <!--TaskGroups-->
 
  <!--TaskGroupsEnd-->
- <section>
-    <ul>
-        <li><button onclick="textModal()"><i class='bx bx-plus' ></i></button></li>
-    </ul>
- </section>
+
  
 <script src="SignupAUTH.js"></script>
 <script src="LogInAUTH.js"></script>
