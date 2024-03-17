@@ -58,7 +58,7 @@ flex: 0.9;
     border-radius: 20px;
     height: 20px;
     margin-top: 12px;
-    margin-left: -20px;
+    margin-left: -40px;
     font-size: 1.1rem;
     cursor: pointer;
    
@@ -86,11 +86,25 @@ font-size: 1rem;
 word-break: break-all;
 white-space: wrap;
 background-color: rgba(255, 255, 255, 0.26);
-width: 75%;
+width: 59%;
 text-align: start;
 border-radius: 5px;
 }
-
+.taskMenu #removeALL{
+    border: none;
+    border-radius: 20px;
+    height: 20px;
+    padding: 0px 2px;
+    margin-top: 12px;
+   color: red;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.taskMenu #category{
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.69);
+}
 
 
 
