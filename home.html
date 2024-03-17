@@ -13,19 +13,28 @@
 <body>
  <div class="top">
     <ul>
-        <li><h1>Invent<span>S</span></h1></li>
+        <li><div id="pcC"><h1>Invent<span>S</span></h1></div></li>
+        <li><button id="menu" onclick="mobileC()"><i class='bx bx-menu'></i></button></li>
+        
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Contact</a></li>
         
     </ul>
  </div>
- <div class="sidebar">
+ <div class="sidebar" id="sidebar">
     <ul>
         <li><a href="#"><i class='bx bx-user'></i> Profile</a></li>
         <li><a href="task.html">Task</a></li>
+        <li><a href="preference.html">Preference</a></li>
+        
+        <li><button id="logout" onclick="logout()">Log out<i class='bx bx-log-out' ></i></button></li>
       
     </ul>
  </div>
+ <script src="task.js"></script>
+ <script src="SignupAUTH.js"></script>
+ <script src="LogInAUTH.js"></script>
+ <script src="home.js"></script>
 </body>
 </html>
