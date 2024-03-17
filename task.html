@@ -28,6 +28,7 @@
     <ul>
         <li><a href="#"><i class='bx bx-user'></i> Profile</a></li>
         <li><a href="task.html">Task</a></li>
+        <li><a href="preference.html">Preference</a></li>
         <li><button id="logout" onclick="logout()">Log out<i class='bx bx-log-out' ></i></button></li>
       
     </ul>
@@ -36,7 +37,7 @@
  <div class="invisibleContainer">
 <div class="taskMenu" id="taskMenu">
     <ul>
-        <li> <input type="text" placeholder="What have you planned today?" id="noteInput"><button id="addTaskBtn" onclick="addTask()"><i class='bx bx-plus'></i></button></li>
+        <li> <input type="text" placeholder="What have you planned today?" id="noteInput"><button id="addTaskBtn" onclick="addTask()"><i class='bx bx-plus'></i></button><button id="removeALL" onclick="removeALL()"><i class='bx bxs-trash-alt'></i></button></li>
     
     </ul>
    
@@ -44,7 +45,7 @@
         <ul id="taskList"></ul>
     </div>
 </div>
-</div>
+
  <!--EndTaskMenu-->
 
 
