@@ -30,6 +30,11 @@ body{
     color: black;
     transition: 0.1s ease;
 }
+.top ul li #menu{
+    border: none;
+    background-color: rgb(241, 241, 241);
+    font-size: 1.2rem;
+}
 .top ul li a:hover{
     transition: 0.1s ease;
     text-decoration: underline;
@@ -66,7 +71,7 @@ body{
     color: black;
     font-size: 2.5rem;
 }
-.sidebar ul li button{
+.sidebar ul li #logout{
     border: none;
     width: 100%;
     cursor: pointer;
@@ -79,10 +84,13 @@ body{
 }
 
 
-@media screen and (min-width:200px) and (max-width:940px){
-    .sidebar{
-        display: none;
-    }
-    
-    
-    }
+
+
+@media screen and (min-width:348px) and (max-width:1288px){
+.sidebar{
+   display: none;
+}
+#pcC{
+    display: none;
+}
+}
