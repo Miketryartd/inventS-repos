@@ -77,3 +77,12 @@ body{
     transition: 0.2s ease;
     background-color: rgb(225, 225, 225);
 }
+
+
+@media screen and (min-width:200px) and (max-width:940px){
+    .sidebar{
+        display: none;
+    }
+    
+    
+    }
