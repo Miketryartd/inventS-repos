@@ -1,96 +1,41 @@
-*{
-    padding: 0px;
-    margin:0px;
-    text-decoration: none;
-    scroll-behavior: smooth;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-body{
-    background-color: rgb(250, 250, 250);
-}
-.top{
-    width: 100%;
-    background-color: white;
-    box-shadow: 0px 0px 1px black;
-    z-index: 100;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-    text-align: center;
-}
-.top ul li{
-    display: inline-block;
-    padding: 20px 10px;
-}
-.top ul li span{
-    color: rgb(133, 133, 220);
-}
-.top ul li a{
-    color: black;
-    transition: 0.1s ease;
-}
-.top ul li #menu{
-    border: none;
-    background-color: rgb(241, 241, 241);
-    font-size: 1.2rem;
-}
-.top ul li a:hover{
-    transition: 0.1s ease;
-    text-decoration: underline;
-}
-.top ul li button{
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: 0.2s ease;
-}
-.top ul li button:hover{
-    transition: 0.2s ease;
-    background-color: rgb(218, 218, 218);
-}
-.sidebar{
-  
-    height: 828px;
-    position: fixed;
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    text-align: start;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.135);
-
-    
-}
-.sidebar ul li{
-    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.423);
-
-}
-.sidebar ul li a{
-    color: black;
-    font-size: 2.5rem;
-}
-.sidebar ul li #logout{
-    border: none;
-    width: 100%;
-    cursor: pointer;
-    transition: 0.2s ease;
-    font-size: 1.5rem;
-}
-.sidebar ul li button:hover{
-    transition: 0.2s ease;
-    background-color: rgb(225, 225, 225);
-}
-
-
-
-
-@media screen and (min-width:348px) and (max-width:1288px){
-.sidebar{
-   display: none;
-}
-#pcC{
-    display: none;
-}
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Ojuju:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="home.css">
+    <title>InventS</title>
+</head>
+<body data-value="colorful">
+    <div class="top" data-value="colorful">
+       <ul>
+           <li><div id="pcC" data-id="text"><h1>Invent<span>S</span></h1></div></li>
+           <li><button id="menu" data-value="colorful" data-color="light" data-id="text" onclick="mobileC()" data-id="text"><i class='bx bx-menu'></i></button></li>
+           
+           <li><a href="#" data-id="text">Home</a></li>
+           <li><a href="#"data-id="text">About</a></li>
+           <li><a href="#"data-id="text">Contact</a></li>
+           
+       </ul>
+    </div>
+    <div class="sidebar" id="sidebar" data-value="colorful">
+       <ul>
+           <li><a href="#" data-id="text"><i class='bx bx-user'></i> Profile</a></li>
+           <li><a href="task.html" data-id="text">Task</a></li>
+           <li><a href="preference.html" data-id="text">Preference</a></li>
+           
+           <li><button id="logout" onclick="logout()" data-value="colorful" data-color="dark" data-id="text">Log out<i class='bx bx-log-out'  ></i></button></li>
+         
+       </ul>
+    </div>
+ <script src="preference.js"></script>
+ <script src="task.js"></script>
+ <script src="SignupAUTH.js"></script>
+ <script src="LogInAUTH.js"></script>
+ <script src="home.js"></script>
+</body>
+</html>
