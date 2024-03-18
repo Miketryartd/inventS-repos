@@ -10,28 +10,29 @@
     <link rel="stylesheet" href="home.css">
     <title>InventS</title>
 </head>
-<body>
- <div class="top">
-    <ul>
-        <li><div id="pcC"><h1>Invent<span>S</span></h1></div></li>
-        <li><button id="menu" onclick="mobileC()"><i class='bx bx-menu'></i></button></li>
-        
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-        
-    </ul>
- </div>
- <div class="sidebar" id="sidebar">
-    <ul>
-        <li><a href="#"><i class='bx bx-user'></i> Profile</a></li>
-        <li><a href="task.html">Task</a></li>
-        <li><a href="preference.html">Preference</a></li>
-        
-        <li><button id="logout" onclick="logout()">Log out<i class='bx bx-log-out' ></i></button></li>
-      
-    </ul>
- </div>
+<body data-value="colorful">
+    <div class="top" data-value="colorful">
+       <ul>
+           <li><div id="pcC" data-id="text"><h1>Invent<span>S</span></h1></div></li>
+           <li><button id="menu" data-value="colorful" data-color="light" data-id="text" onclick="mobileC()" data-id="text"><i class='bx bx-menu'></i></button></li>
+           
+           <li><a href="#" data-id="text">Home</a></li>
+           <li><a href="#"data-id="text">About</a></li>
+           <li><a href="#"data-id="text">Contact</a></li>
+           
+       </ul>
+    </div>
+    <div class="sidebar" id="sidebar" data-value="colorful">
+       <ul>
+           <li><a href="#" data-id="text"><i class='bx bx-user'></i> Profile</a></li>
+           <li><a href="task.html" data-id="text">Task</a></li>
+           <li><a href="preference.html" data-id="text">Preference</a></li>
+           
+           <li><button id="logout" onclick="logout()" data-value="colorful" data-color="dark" data-id="text">Log out<i class='bx bx-log-out'  ></i></button></li>
+         
+       </ul>
+    </div>
+ <script src="preference.js"></script>
  <script src="task.js"></script>
  <script src="SignupAUTH.js"></script>
  <script src="LogInAUTH.js"></script>
